@@ -4,12 +4,17 @@
 
 [[redirects]]
   from = "https://events.rsglab.online"
-  to = "/events"
+  to = "/events/index.html"
   status = 200
 
 [[redirects]]
   from = "https://events.rsglab.online/*"
-  to = "/events/:splat"
+  to = "/events/:splat/index.html"
+  status = 200
+
+[[redirects]]
+  from = "https://events.rsglab.online/*/"
+  to = "/events/:splat/index.html"
   status = 200
 
 [[headers]]
