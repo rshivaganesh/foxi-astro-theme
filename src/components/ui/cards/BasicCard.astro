@@ -16,7 +16,6 @@
 // Components
 // - UI
 import { Image } from 'astro:assets'
-import { Icon } from 'astro-icon/components'
 import Card from './partials/Card.astro'
 import CardBody from './partials/CardBody.astro'
 
@@ -44,13 +43,6 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 				width={600}
 				height={400}
 			/>
-		)
-	}
-	{
-		icon && (
-			<div class="px-6 pt-6">
-				<Icon name={`${icon}`} class="card__icon" />
-			</div>
 		)
 	}
 	<CardBody>

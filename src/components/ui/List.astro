@@ -10,7 +10,6 @@
 
 // Components
 // - UI
-import { Icon } from 'astro-icon/components'
 
 // Props
 type Props = {
@@ -33,7 +32,7 @@ const { type = 'basic', listColor = 'primary', listItems, classes } = Astro.prop
 	{
 		listItems.map((item) => (
 			<li>
-				{type === 'checklist' && <Icon name="check-circle" />} {item.listItem}
+				{item.listItem}
 			</li>
 		))
 	}

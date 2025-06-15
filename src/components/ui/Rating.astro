@@ -14,7 +14,6 @@
 
 // Components
 // - UI
-import { Icon } from 'astro-icon/components'
 
 // Props
 type Props = {
@@ -43,7 +42,7 @@ const { rating = 0, size = 'base', elevated, title, text, helperText, classes } 
 			{
 				Array.from({ length: 5 }, (_, index) => (
 					<span aria-hidden="true">
-						<Icon name={index < rating ? 'filled-star' : 'empty-star'} />
+						{index < rating ? '★' : '☆'}
 					</span>
 				))
 			}

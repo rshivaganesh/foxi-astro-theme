@@ -7,10 +7,6 @@
 
 // Reference: https://wind-ui.com/components/breadcrumbs/
 
-// Components
-// - UI
-import { Icon } from 'astro-icon/components'
-
 // URL Parsing and breadcrumb generation
 const url = new URL(Astro.request.url)
 const pathname = url.pathname
@@ -32,9 +28,6 @@ const { classes } = Astro.props
 					<a href={`/${segments.slice(0, index).join('/')}`} class="breadcrumbs__item-link">
 						{index === 0 ? segment : segment.replace(/-/g, ' ')}
 					</a>
-					{index < breadcrumbs.length - 1 && (
-						<Icon name="chevron-left" class="breadcrumbs__item-icon" />
-					)}
 				</li>
 			))
 		}

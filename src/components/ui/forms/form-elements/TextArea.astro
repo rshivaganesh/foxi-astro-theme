@@ -17,7 +17,6 @@
 
 // Components
 // - UI
-import { Icon } from 'astro-icon/components'
 
 // Props
 type Props = {
@@ -58,7 +57,6 @@ const { id, label, iconName, iconPosition, helperText, required, disabled, value
 	>
 		{label}
 	</label>
-	{iconName && <Icon name={iconName} class="input__icon" />}
 	{
 		helperText && (
 			<small class="input__helper-text">

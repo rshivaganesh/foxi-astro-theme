@@ -4,10 +4,6 @@
 // Description: the website footer is the section of content
 // Reference: https://wind-ui.com/components/footers/
 
-// Components
-// - UI
-import { Icon } from 'astro-icon/components'
-
 // Data
 import { socialLinks } from '../../config/socialLinks'
 import { footerNavigationData } from '../../config/footerNavigation'
@@ -58,7 +54,6 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData
 							socialLinks.map((social) => (
 								<li>
 									<a href={social.link} aria-label={social.name}>
-										<Icon name={social.icon} />
 									</a>
 								</li>
 							))
