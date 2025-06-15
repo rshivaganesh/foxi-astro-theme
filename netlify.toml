@@ -3,16 +3,21 @@
   publish = "dist"
 
 [[redirects]]
+  from = "https://events.rsglab.online/*"
+  to = "https://rsglab.online/events/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://events.rsglab.online"
   to = "https://rsglab.online/events"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://events.rsglab.online/*"
-  to = "https://rsglab.online/events/:splat"
-  status = 301
-  force = true
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"
