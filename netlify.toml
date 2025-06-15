@@ -7,9 +7,19 @@
   to = "/events/:splat"
   status = 200
   force = true
+  headers = {X-Frame-Options = "DENY", X-XSS-Protection = "1; mode=block"}
 
 [[redirects]]
   from = "https://events.rsglab.online"
   to = "/events"
   status = 200
-  force = true 
+  force = true
+  headers = {X-Frame-Options = "DENY", X-XSS-Protection = "1; mode=block"}
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin" 
