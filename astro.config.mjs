@@ -38,3 +38,4 @@ export default defineConfig({
     'events.rsglab.online/*': '/events/:splat'
   }
 });
+
