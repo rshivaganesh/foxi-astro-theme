@@ -17,13 +17,6 @@ export default defineConfig({
     server: {
       host: true
     }
-  },
-  experimental: {
-    redirects: true
-  },
-  redirects: {
-    'events.rsglab.online': '/events',
-    'events.rsglab.online/*': '/events/:splat'
   }
 });
 
